@@ -1,0 +1,119 @@
+ion-header {
+  ion-toolbar {
+    --background: #fff9c4;
+    --color: #3a3a00;
+    --border-color: #f7e97a;
+  }
+
+  ion-back-button {
+    --color: #3a3a00;
+    --font-weight: 600;
+  }
+
+  ion-title {
+    font-family: 'Comic Sans MS', 'Quicksand', 'Nunito', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #3a3a00;
+  }
+}
+
+ion-content {
+  --background: #fffdf0;
+  font-family: 'Quicksand', 'Nunito', sans-serif;
+}
+
+ion-card {
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(230, 210, 60, 0.22);
+  background: #ffffff;
+  margin: 16px;
+  border: 2px solid #fff2a8;
+}
+
+ion-card-header {
+  background: #fff9c4;
+  border-radius: 20px 20px 0 0;
+}
+
+ion-card-title {
+  font-family: 'Quicksand', 'Nunito', sans-serif;
+  color: #3a3a00;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+}
+
+ion-card-content {
+  color: #3a3a00;
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 18px;
+  font-family: 'Quicksand', 'Nunito', sans-serif;
+}
+
+ion-list {
+  background: transparent;
+  padding: 10px;
+}
+
+ion-item {
+  --background: transparent;
+  --padding-start: 0;
+  --inner-padding-end: 0;
+  margin-bottom: 10px;
+
+  &::part(native) {
+    background: transparent;
+  }
+}
+
+ion-button {
+  --background: #ffeb3b;
+  --background-activated: #fdd835;
+  --background-hover: #fff176;
+  --color: #3a3a00;
+  --border-radius: 14px;
+  --box-shadow: 0 3px 10px rgba(230, 210, 60, 0.35);
+  font-family: 'Quicksand', 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: none;
+  letter-spacing: 0.3px;
+  margin: 0;
+  width: 100%;
+}
+
+ion-button[expand="full"] {
+  --padding-start: 14px;
+  --padding-end: 14px;
+  white-space: normal;
+  height: auto;
+  min-height: 48px;
+}
+
+ion-card ion-button {
+  --background: #fff59d;
+  --background-activated: #fff176;
+  --background-hover: #fff9c4;
+}
+
+ion-card ion-button:active {
+  transform: scale(0.97);
+}
+
+ion-content ion-card:last-child ion-card-content p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3a3a00;
+  text-align: center;
+  font-family: 'Quicksand', 'Nunito', sans-serif;
+}
+
+ion-content ion-card:last-child ion-card-title {
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #3a3a00;
+}

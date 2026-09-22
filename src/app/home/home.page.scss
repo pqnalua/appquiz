@@ -1,6 +1,87 @@
+ion-header {
+  ion-toolbar {
+    --background: #fff9c4;
+    --color: #3a3a00;
+    --border-color: #f7e97a;
+  }
+
+  ion-title {
+    font-family: 'Comic Sans MS', 'Quicksand', 'Nunito', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #3a3a00;
+    text-align: center;
+  }
+}
+
+ion-content {
+  --background: #fffdf0;
+  font-family: 'Quicksand', 'Nunito', sans-serif;
+  padding: 8px;
+}
+
+ion-card {
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(230, 210, 60, 0.22);
+  background: #ffffff;
+  margin: 16px;
+  border: 2px solid #fff2a8;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ion-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(230, 210, 60, 0.35);
+}
+
+ion-card:active {
+  transform: scale(0.98);
+}
+
+ion-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 2px solid #fff2a8;
+}
+
+ion-card-header {
+  background: #fff9c4;
+  padding: 14px 16px 8px 16px;
+}
+
+ion-card-title {
+  font-family: 'Quicksand', 'Nunito', sans-serif;
+  color: #3a3a00;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+ion-card-subtitle {
+  font-family: 'Quicksand', 'Nunito', sans-serif;
+  color: #7a7a2a;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: none;
+  margin-top: 2px;
+}
+
+ion-card-content {
+  color: #3a3a00;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 14px 16px 18px 16px;
+  line-height: 1.4;
+  font-family: 'Quicksand', 'Nunito', sans-serif;
+}
+
 #container {
   text-align: center;
-
   position: absolute;
   left: 0;
   right: 0;
@@ -11,14 +92,13 @@
 #container strong {
   font-size: 20px;
   line-height: 26px;
+  color: #3a3a00;
 }
 
 #container p {
   font-size: 16px;
   line-height: 22px;
-
   color: #8c8c8c;
-
   margin: 0;
 }
 

@@ -7,29 +7,29 @@ import { Component, OnInit } from '@angular/core';
   standalone: false,
 })
 export class BasicoPage {
-  perguntaAtual = 0.
+  perguntaAtual = 0;
   score = 0;
   correct = false;
   showAnswer = false;
 
   quiz = [
     {
-      question: '"Qual a tradução de "I was happy"?',
-      options: ['Eu sou feliz', 'Eu estou feliz', 'Eu fui feliz','Eu feliz'],
+      question: 'Qual a tradução de "I was happy"?',
+      options: ['Eu sou feliz', 'Eu estou feliz', 'Eu fui feliz', 'Eu feliz'],
       answer: 2,
       feedbackCorrect: 'Congratulations, you are magic!!!',
       feedbackIncorrect: 'Ops! Try again...'
     },
     {
-      question: '"Qual a tradução de "I see if my eyes"?',
-      options: ['Eu vi com os meus olhos', 'Eu pisquei os meus olhos', 'Vi meus olhos','Eu vejo com os meus olhos'],
+      question: 'Qual a tradução de "I see with my eyes"?',
+      options: ['Eu vi com os meus olhos', 'Eu pisquei os meus olhos', 'Vi meus olhos', 'Eu vejo com os meus olhos'],
       answer: 3,
       feedbackCorrect: 'Congratulations, you are magic!!!',
       feedbackIncorrect: 'Ops! Try again...'
     },
     {
-      question: '"Qual a tradução de "She have one beautiful hair"?',
-      options: ['Eu tenho um lindo cabelo', 'Ela tem um lindo cabelo', 'Ele tem um lindo cabelo','O cabelo é lindo'],
+      question: 'Qual a tradução de "She has one beautiful hair"?',
+      options: ['Eu tenho um lindo cabelo', 'Ela tem um lindo cabelo', 'Ele tem um lindo cabelo', 'O cabelo é lindo'],
       answer: 1,
       feedbackCorrect: 'Congratulations, you are magic!!!',
       feedbackIncorrect: 'Ops! Try again...'
@@ -42,8 +42,8 @@ export class BasicoPage {
       feedbackIncorrect: 'Ops! Try again...'
     },
     {
-      question: '"Qual a tradução de ""?',
-      options: ['', '', '',''],
+      question: 'Qual a tradução de "I am going to travel tomorrow"?',
+      options: ['Eu vou viajar ontem', 'Eu vou viajar amanhã', 'Eu estou viajando agora', 'Eu viajei semana passada'],
       answer: 1,
       feedbackCorrect: 'Congratulations, you are magic!!!',
       feedbackIncorrect: 'Ops! Try again...'
@@ -85,8 +85,8 @@ export class BasicoPage {
     },
   ];
 
-  answer(option: number){
-    if (option === this.quiz[this.perguntaAtual].answer){
+  answer(option: number) {
+    if (option === this.quiz[this.perguntaAtual].answer) {
       this.score++;
       this.correct = true;
     } else {
@@ -94,7 +94,8 @@ export class BasicoPage {
     }
     this.showAnswer = true;
   }
-  nextQuestion(){
+
+  nextQuestion() {
     this.perguntaAtual++;
     this.showAnswer = false;
   }

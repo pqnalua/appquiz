@@ -15,3 +15,5 @@ describe('IntermPage', () => {
     expect(component).toBeTruthy();
   });
 });
+
+

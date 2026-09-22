@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'basico',
+    loadChildren: () => import('./basico/basico.module').then( m => m.BasicoPageModule)
+  },
+  {
+    path: 'interm',
+    loadChildren: () => import('./interm/interm.module').then( m => m.IntermPageModule)
+  },
+  {
+    path: 'avancado',
+    loadChildren: () => import('./avancado/avancado.module').then( m => m.AvancadoPageModule)
+  },
 ];
 
 @NgModule({

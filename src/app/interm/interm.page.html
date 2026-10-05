@@ -4,36 +4,33 @@
       <ion-back-button text="Voltar" defaultHref="/home"></ion-back-button>
     </ion-buttons>
     <ion-title>
-      Intermediário - Séries & Franquias
+      Intermediário
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <!-- Perguntas e respostas -->
   <ion-card *ngIf="perguntaAtual < quiz.length">
     <ion-card-header>
       <ion-card-subtitle>Pergunta {{ perguntaAtual + 1 }} de {{ quiz.length }}</ion-card-subtitle>
-      <ion-card-title> {{ quiz[perguntaAtual].question }} </ion-card-title>
+      <ion-card-title> {{ quiz[perguntaAtual].questao }} </ion-card-title>
     </ion-card-header>
     <ion-list>
-      <ion-item *ngFor="let option of quiz[perguntaAtual].options; index as i">
+      <ion-item *ngFor="let option of quiz[perguntaAtual].opcoes; index as i">
         <ion-button expand="full" [disabled]="showAnswer" (click)="answer(i)"> {{ option }}</ion-button>
       </ion-item>
     </ion-list>
   </ion-card>
 
-  <!-- Feedback -->
   <ion-card *ngIf="showAnswer">
     <ion-card-content>
-      {{ correct ? quiz[perguntaAtual].feedbackCorrect : quiz[perguntaAtual].feedbackIncorrect }}
+      {{ correct ? quiz[perguntaAtual].feedbackCorreto : quiz[perguntaAtual].feedbackIncorreto }}
     </ion-card-content>
     <ion-button expand="full" (click)="nextQuestion()">
       {{ perguntaAtual + 1 === quiz.length ? 'Ver Resultado' : 'Próxima Pergunta' }}
     </ion-button>
   </ion-card>
 
-  <!-- Pontuação Final -->
   <ion-card *ngIf="perguntaAtual >= quiz.length">
     <ion-card-header>
       <ion-card-title>Quiz Concluído!</ion-card-title>
@@ -47,6 +44,4 @@
       <ion-button expand="full" fill="outline" href="/home">Voltar ao Início</ion-button>
     </div>
   </ion-card>
-
-</ion-content>
 </ion-content>

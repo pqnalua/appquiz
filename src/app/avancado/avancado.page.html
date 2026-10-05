@@ -10,28 +10,24 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <!-- Perguntas e respostas -->
   <ion-card *ngIf="perguntaAtual < quiz.length">
     <ion-card-header>
-      <ion-card-title> {{ quiz[perguntaAtual].question }} </ion-card-title>
+      <ion-card-title> {{ quiz[perguntaAtual].questao }} </ion-card-title>
     </ion-card-header>
     <ion-list>
-      <ion-item *ngFor="let option of quiz[perguntaAtual].options; index as i">
+      <ion-item *ngFor="let option of quiz[perguntaAtual].opcoes; index as i">
         <ion-button expand="full" (click)="answer(i)"> {{ option }}</ion-button>
       </ion-item>
     </ion-list>
   </ion-card>
 
-  <!-- Feedback -->
   <ion-card *ngIf="showAnswer">
     <ion-card-content>
-      {{ correct ? quiz[perguntaAtual].feedbackCorrect :
-      quiz[perguntaAtual].feedbackIncorrect }}
+      {{ correct ? quiz[perguntaAtual].feedbackCorreto : quiz[perguntaAtual].feedbackIncorreto }}
     </ion-card-content>
     <ion-button expand="full" (click)="nextQuestion()"> Próximo </ion-button>
   </ion-card>
 
-  <!-- Pontuação -->
   <ion-card *ngIf="perguntaAtual >= quiz.length">
     <ion-card-header>
       <ion-card-title>Quiz Concluido!</ion-card-title>
@@ -40,5 +36,4 @@
       <p> {{ score }} de {{ quiz.length }} </p>
     </ion-card-content>
   </ion-card>
-
 </ion-content>

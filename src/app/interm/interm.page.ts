@@ -14,98 +14,74 @@ export class IntermPage {
 
   quiz = [
     {
-      question: 'Na série "Stranger Things", qual é o nome do mundo paralelo sombrio e assustador?',
-      options: ['O Abismo', 'Mundo Invertido (Upside Down)', 'Terra das Sombras', 'Dimensão Zero'],
-      answer: 1,
-      feedbackCorrect: 'Correto! Cuidado com o Demogorgon no Mundo Invertido! 🚲🔦',
-      feedbackIncorrect: 'Ops! O mundo alternativo da série é o Mundo Invertido.'
+      questao: 'Qual movimento de moda dos anos 1970 ficou marcado por alfinetes e roupas rasgadas?',
+      opcoes: ['Hippie', 'Disco', 'Punk', 'Grunge', 'Preppy'],
+      resposta: 2,
+      feedbackCorreto: 'Parabéns, você é incrível!!',
+      feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-      question: 'Em "O Senhor dos Anéis", quantos anéis de poder foram dados aos Reis-Elfos?',
-      options: ['Três Anéis', 'Sete Anéis', 'Nove Anéis', 'Um Único Anel'],
-      answer: 0,
-      feedbackCorrect: 'Exato! "Três anéis para os Reis-Elfos sob este céu..." 🧝‍♂️💍',
-      feedbackIncorrect: 'Errou! Foram 3 anéis para os Elfos, 7 para os Anões e 9 para os Homens.'
+      questao: 'Qual peça foi popularizada por Mary Quant nos anos 1960?',
+      opcoes: ['Calça jeans', 'Terno', 'Blazer', 'Minissaia', 'Salto agulha'],
+      resposta: 3,
+      feedbackCorreto: 'Parabéns, você é incrível!!',
+      feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-      question: 'No Universo Marvel (MCU), quantas Joias do Infinito compõem a Manopla do Thanos?',
-      options: ['4 Joias', '5 Joias', '6 Joias', '7 Joias'],
-      answer: 2,
-      feedbackCorrect: 'Perfeito! São 6 Joias: Espaço, Mente, Realidade, Poder, Tempo e Alma! 💎🫰',
-      feedbackIncorrect: 'Incorreto! A Manopla do Infinito reúne 6 Joias.'
+      questao: 'Qual casa de moda foi fundada por Yves Saint Laurent e Pierre Bergé?',
+      opcoes: ['Chanel', 'Yves Saint Laurent', 'Dior', 'Gucci', 'Prada'],
+      resposta: 1,
+      feedbackCorreto: 'Parabéns, você é incrível!!',
+      feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-      question: 'Na série "Breaking Bad", sob qual codinome o professor Walter White é conhecido no crime?',
-      options: ['Saul Goodman', 'Gus Fring', 'Heisenberg', 'El Camino'],
-      answer: 2,
-      feedbackCorrect: 'Say my name! É o Heisenberg! 🧪🕶️',
-      feedbackIncorrect: 'Errado! Walter White adota o pseudônimo de Heisenberg.'
+      questao: 'Qual técnica japonesa de tingimento por amarração é usada em tecidos?',
+      opcoes: ['Tie-dye', 'Batik', 'Ikat', 'Plangi', 'Shibori'],
+      resposta: 4,
+      feedbackCorreto: 'Parabéns, você é incrível!!',
+      feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-      question: 'Qual é o verdadeiro nome da criatura chamada de "Baby Yoda" em "The Mandalorian"?',
-      options: ['Grogu', 'Yaddle', 'Gideon', 'Din Djarin'],
-      answer: 0,
-      feedbackCorrect: 'Isso aí! O nome dele é Grogu! This is the Way! 🛸💚',
-      feedbackIncorrect: 'Ops! Seu nome verdadeiro revelado na 2ª temporada é Grogu.'
+      questao: 'Qual estilista é conhecido por criar o tailleur feminino?',
+      opcoes: ['Dior', 'Balenciaga', 'Chanel', 'Givenchy', 'Lacroix'],
+      resposta: 2,
+      feedbackCorreto: 'Parabéns, você é incrível!!',
+      feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-      question: 'Em "Matrix" (1999), qual pílula Neo escolhe tomar para acordar no mundo real?',
-      options: ['A pílula azul', 'A pílula verde', 'A pílula vermelha', 'A pílula dourada'],
-      answer: 2,
-      feedbackCorrect: 'Boa escolha! Neo toma a pílula vermelha e acorda na realidade! 🕶️💊',
-      feedbackIncorrect: 'Não! Neo escolhe a pílula vermelha; a azul o manteria na ilusão.'
+      questao: 'Qual modelo de calça foi criado por Levi Strauss?',
+      opcoes: ['Jeans', 'Chino', 'Alfaiataria', 'Legging', 'Cargo'],
+      resposta: 0,
+      feedbackCorreto: 'Parabéns, você é incrível!!',
+      feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-      question: 'Na série "Game of Thrones", qual é o lema oficial da Casa Stark de Winterfell?',
-      options: [
-        'Fogo e Sangue',
-        'O Inverno está Chegando (Winter is Coming)',
-        'Nós Não Semeamos',
-        'Família, Dever, Honra'
-      ],
-      answer: 1,
-      feedbackCorrect: 'Winter is Coming! Acertou em cheio! 🐺❄️',
-      feedbackIncorrect: 'Errou! O lema da Casa Stark é "O Inverno está Chegando".'
+      questao: 'Qual é o nome da semana de moda de Milão?',
+      opcoes: ['Paris Fashion Week', 'London Fashion Week', 'New York Fashion Week', 'Milano Fashion Week', 'São Paulo Fashion Week'],
+      resposta: 3,
+      feedbackCorreto: 'Parabéns, você é incrível!!',
+      feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-      question: 'No clássico "Jurassic Park" (1993), de onde os cientistas extraíram o DNA dos dinossauros?',
-      options: [
-        'Ossos fossilizados',
-        'Mosquitos preservados em pedras de âmbar',
-        'Solo congelado da Antártida',
-        'Ovos petrificados no deserto'
-      ],
-      answer: 1,
-      feedbackCorrect: 'Fantástico! Mosquitos fossilizados em âmbar com sangue de dinossauro! 🦟🦕',
-      feedbackIncorrect: 'Não foi dessa vez! O DNA foi retirado de mosquitos pré-históricos em âmbar.'
+      questao: 'Qual estilista japonesa fundou a Comme des Garçons?',
+      opcoes: ['Yohji Yamamoto', 'Rei Kawakubo', 'Issey Miyake', 'Kenzo', 'Junya Watanabe'],
+      resposta: 1,
+      feedbackCorreto: 'Parabéns, você é incrível!!',
+      feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-      question: 'Qual ator interpretou o lendário Coringa em "Batman: O Cavaleiro das Trevas" (2008)?',
-      options: ['Jack Nicholson', 'Joaquin Phoenix', 'Heath Ledger', 'Jared Leto'],
-      answer: 2,
-      feedbackCorrect: 'Why so serious? Heath Ledger entregou uma atuação inesquecível! 🃏🎭',
-      feedbackIncorrect: 'Incorreto! A atuação marcante de 2008 foi de Heath Ledger.'
+      questao: 'Qual acessório é usado para proteger as mãos em cerimônias formais?',
+      opcoes: ['Cachecol', 'Cinto', 'Chapéu', 'Óculos', 'Luvas'],
+      resposta: 4,
+      feedbackCorreto: 'Parabéns, você é incrível!!',
+      feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-      question: 'Na aclamada série "The Last of Us", qual espécie de fungo causa a infecção global?',
-      options: ['Cordyceps', 'Penicillium', 'Aspergillus', 'Rhizopus'],
-      answer: 0,
-      feedbackCorrect: 'Exato! O fungo mutante Cordyceps causou o apocalipse! 🍄🧟',
-      feedbackIncorrect: 'Errou! Trata-se do fungo mutante Cordyceps.'
-    },
-    {
-      question: 'No filme de ficção "Interestelar" (2014), qual é o nome do gigantesco buraco negro?',
-      options: ['TARS', 'Gargântua', 'Cygnus X', 'Endurance'],
-      answer: 1,
-      feedbackCorrect: 'Impressionante! Gargântua, um dos buracos negros mais icônicos do cinema! 🌌🚀',
-      feedbackIncorrect: 'Ops! O buraco negro visitado pelos astronautas se chama Gargântua.'
-    },
-    {
-      question: 'Qual série britânica retrata a gangue familiar liderada por Thomas Shelby em Birmingham?',
-      options: ['Peaky Blinders', 'Downton Abbey', 'Sherlock', 'The Crown'],
-      answer: 0,
-      feedbackCorrect: 'By order of the Peaky Blinders! Resposta certa! 🥃🧢',
-      feedbackIncorrect: 'Não foi dessa vez! A série de Thomas Shelby é "Peaky Blinders".'
+      questao: 'Qual termo define roupas feitas sob medida?',
+      opcoes: ['Prêt-à-porter', 'Fast fashion', 'Alta-costura', 'Streetwear', 'Vintage'],
+      resposta: 2,
+      feedbackCorreto: 'Parabéns, você é incrível!!',
+      feedbackIncorreto: 'Ops! Tente novamente...'
     }
   ];
 
@@ -113,7 +89,7 @@ export class IntermPage {
     if (this.showAnswer) {
       return;
     }
-    if (option === this.quiz[this.perguntaAtual].answer) {
+    if (option === this.quiz[this.perguntaAtual].resposta) {
       this.score++;
       this.correct = true;
     } else {

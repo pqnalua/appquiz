@@ -14,75 +14,75 @@ export class BasicoPage {
 
   quiz = [
     {
-    questão: 'Qual peça de roupa é tradicionalmente usada em formaturas?',
-    opções: ['Toga', 'Kimono', 'Sari', 'Kilt', 'Smoking'],
-    resposta: 0,
-    feedbackCorreto: 'Parabéns, você é incrível!!',
-    feedbackIncorreto: 'Ops! Tente novamente...'
+      questao: 'Qual peça de roupa é tradicionalmente usada em formaturas?',
+      opcoes: ['Toga', 'Kimono', 'Sari', 'Kilt', 'Smoking'],
+      resposta: 0,
+      feedbackCorreto: 'Parabéns, você é incrível!!',
+      feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-    questão: 'Qual é o nome do tecido mais comum em camisetas básicas?',
-    opções: ['Seda', 'Linho', 'Poliéster', 'Algodão', 'Lã'],
-    resposta: 3,
-    feedbackCorreto: 'Parabéns, você é incrível!!',
-    feedbackIncorreto: 'Ops! Tente novamente...'
+      questao: 'Qual é o nome do tecido mais comum em camisetas básicas?',
+      opcoes: ['Seda', 'Linho', 'Poliéster', 'Algodão', 'Lã'],
+      resposta: 3,
+      feedbackCorreto: 'Parabéns, você é incrível!!',
+      feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-    questão: 'Qual acessório é usado para segurar as calças?',
-    opções: ['Gravata', 'Cinto', 'Cachecol', 'Chapéu', 'Luva'],
-    resposta: 1,
-    feedbackCorreto: 'Parabéns, você é incrível!!',
-    feedbackIncorreto: 'Ops! Tente novamente...'
+      questao: 'Qual acessório é usado para segurar as calças?',
+      opcoes: ['Gravata', 'Cinto', 'Cachecol', 'Chapéu', 'Luva'],
+      resposta: 1,
+      feedbackCorreto: 'Parabéns, você é incrível!!',
+      feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-    questão: 'Qual dessas é uma cor neutra?',
-    opções: ['Vermelho', 'Azul', 'Verde', 'Rosa', 'Preto'],
-    resposta: 4,
-    feedbackCorreto: 'Parabéns, você é incrível!!',
-    feedbackIncorreto: 'Ops! Tente novamente...'
+      questao: 'Qual dessas é uma cor neutra?',
+      opcoes: ['Vermelho', 'Azul', 'Verde', 'Rosa', 'Preto'],
+      resposta: 4,
+      feedbackCorreto: 'Parabéns, você é incrível!!',
+      feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-    questão: 'Qual estilista é conhecido pelo "New Look"?',
-    opções: ['Coco Chanel', 'Yves Saint Laurent', 'Christian Dior', 'Giorgio Armani', 'Versace'],
-    resposta: 2,
-    feedbackCorreto: 'Parabéns, você é incrível!!',
-    feedbackIncorreto: 'Ops! Tente novamente...'
+      questao: 'Qual estilista é conhecido pelo "New Look"?',
+      opcoes: ['Coco Chanel', 'Yves Saint Laurent', 'Christian Dior', 'Giorgio Armani', 'Versace'],
+      resposta: 2,
+      feedbackCorreto: 'Parabéns, você é incrível!!',
+      feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-    questão: 'Qual peça é típica do guarda-roupa masculino clássico?',
-    opções: ['Terno', 'Saia', 'Vestido', 'Bolsa', 'Salto alto'],
-    resposta: 0,
-    feedbackCorreto: 'Parabéns, você é incrível!!',
-    feedbackIncorreto: 'Ops! Tente novamente...'
+      questao: 'Qual peça é típica do guarda-roupa masculino clássico?',
+      opcoes: ['Terno', 'Saia', 'Vestido', 'Bolsa', 'Salto alto'],
+      resposta: 0,
+      feedbackCorreto: 'Parabéns, você é incrível!!',
+      feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-    questão: 'Qual material é usado para fazer jeans?',
-    opções: ['Seda', 'Linho', 'Poliéster', 'Cetim', 'Brim'],
-    resposta: 4,
-    feedbackCorreto: 'Parabéns, você é incrível!!',
-    feedbackIncorreto: 'Ops! Tente novamente...'
+      questao: 'Qual material é usado para fazer jeans?',
+      opcoes: ['Seda', 'Linho', 'Poliéster', 'Cetim', 'Brim'],
+      resposta: 4,
+      feedbackCorreto: 'Parabéns, você é incrível!!',
+      feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-    questão: 'Qual acessório é usado no pescoço?',
-    opções: ['Anel', 'Brinco', 'Colar', 'Pulseira', 'Tornozeleira'],
-    resposta: 2,
-    feedbackCorreto: 'Parabéns, você é incrível!!',
-    feedbackIncorreto: 'Ops! Tente novamente...'
+      questao: 'Qual acessório é usado no pescoço?',
+      opcoes: ['Anel', 'Brinco', 'Colar', 'Pulseira', 'Tornozeleira'],
+      resposta: 2,
+      feedbackCorreto: 'Parabéns, você é incrível!!',
+      feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-    questão: 'Qual é o nome da semana de moda de Paris?',
-    opções: ['Milano Moda', 'Paris Fashion Week', 'London Fashion Week', 'New York Fashion Week', 'São Paulo Fashion Week'],
-    resposta: 1,
-    feedbackCorreto: 'Parabéns, você é incrível!!',
-    feedbackIncorreto: 'Ops! Tente novamente...'
+      questao: 'Qual é o nome da semana de moda de Paris?',
+      opcoes: ['Milano Moda', 'Paris Fashion Week', 'London Fashion Week', 'New York Fashion Week', 'São Paulo Fashion Week'],
+      resposta: 1,
+      feedbackCorreto: 'Parabéns, você é incrível!!',
+      feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-    questão: 'Qual tecido é conhecido por ser transparente e leve?',
-    opções: ['Jeans', 'Lã', 'Couro', 'Seda', 'Algodão'],
-    resposta: 3,
-    feedbackCorreto: 'Parabéns, você é incrível!!',
-    feedbackIncorreto: 'Ops! Tente novamente...'
-    },
+      questao: 'Qual tecido é conhecido por ser transparente e leve?',
+      opcoes: ['Jeans', 'Lã', 'Couro', 'Seda', 'Algodão'],
+      resposta: 3,
+      feedbackCorreto: 'Parabéns, você é incrível!!',
+      feedbackIncorreto: 'Ops! Tente novamente...'
+    }
   ];
 
   answer(option: number) {
@@ -97,6 +97,13 @@ export class BasicoPage {
 
   nextQuestion() {
     this.perguntaAtual++;
+    this.showAnswer = false;
+  }
+
+  reiniciar() {
+    this.perguntaAtual = 0;
+    this.score = 0;
+    this.correct = false;
     this.showAnswer = false;
   }
 }

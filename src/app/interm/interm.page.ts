@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-interm',
@@ -14,129 +14,106 @@ export class IntermPage {
 
   quiz = [
     {
-      question: 'Qual a tradução de "I have been studying English for three years"?',
-      options: [
-        'Eu estudo inglês há três anos',
-        'Eu estudei inglês por três anos',
-        'Eu estou estudando inglês há três anos',
-        'Eu vou estudar inglês por três anos'
-      ],
-      answer: 2,
-      feedbackCorrect: 'Congratulations, you are magic!!!',
-      feedbackIncorrect: 'Ops! Try again...'
+      question: 'Na série "Stranger Things", qual é o nome do mundo paralelo sombrio e assustador?',
+      options: ['O Abismo', 'Mundo Invertido (Upside Down)', 'Terra das Sombras', 'Dimensão Zero'],
+      answer: 1,
+      feedbackCorrect: 'Correto! Cuidado com o Demogorgon no Mundo Invertido! 🚲🔦',
+      feedbackIncorrect: 'Ops! O mundo alternativo da série é o Mundo Invertido.'
     },
     {
-      question: 'Qual a tradução de "She would have come if you had invited her"?',
+      question: 'Em "O Senhor dos Anéis", quantos anéis de poder foram dados aos Reis-Elfos?',
+      options: ['Três Anéis', 'Sete Anéis', 'Nove Anéis', 'Um Único Anel'],
+      answer: 0,
+      feedbackCorrect: 'Exato! "Três anéis para os Reis-Elfos sob este céu..." 🧝‍♂️💍',
+      feedbackIncorrect: 'Errou! Foram 3 anéis para os Elfos, 7 para os Anões e 9 para os Homens.'
+    },
+    {
+      question: 'No Universo Marvel (MCU), quantas Joias do Infinito compõem a Manopla do Thanos?',
+      options: ['4 Joias', '5 Joias', '6 Joias', '7 Joias'],
+      answer: 2,
+      feedbackCorrect: 'Perfeito! São 6 Joias: Espaço, Mente, Realidade, Poder, Tempo e Alma! 💎🫰',
+      feedbackIncorrect: 'Incorreto! A Manopla do Infinito reúne 6 Joias.'
+    },
+    {
+      question: 'Na série "Breaking Bad", sob qual codinome o professor Walter White é conhecido no crime?',
+      options: ['Saul Goodman', 'Gus Fring', 'Heisenberg', 'El Camino'],
+      answer: 2,
+      feedbackCorrect: 'Say my name! É o Heisenberg! 🧪🕶️',
+      feedbackIncorrect: 'Errado! Walter White adota o pseudônimo de Heisenberg.'
+    },
+    {
+      question: 'Qual é o verdadeiro nome da criatura chamada de "Baby Yoda" em "The Mandalorian"?',
+      options: ['Grogu', 'Yaddle', 'Gideon', 'Din Djarin'],
+      answer: 0,
+      feedbackCorrect: 'Isso aí! O nome dele é Grogu! This is the Way! 🛸💚',
+      feedbackIncorrect: 'Ops! Seu nome verdadeiro revelado na 2ª temporada é Grogu.'
+    },
+    {
+      question: 'Em "Matrix" (1999), qual pílula Neo escolhe tomar para acordar no mundo real?',
+      options: ['A pílula azul', 'A pílula verde', 'A pílula vermelha', 'A pílula dourada'],
+      answer: 2,
+      feedbackCorrect: 'Boa escolha! Neo toma a pílula vermelha e acorda na realidade! 🕶️💊',
+      feedbackIncorrect: 'Não! Neo escolhe a pílula vermelha; a azul o manteria na ilusão.'
+    },
+    {
+      question: 'Na série "Game of Thrones", qual é o lema oficial da Casa Stark de Winterfell?',
       options: [
-        'Ela viria se você a convidasse',
-        'Ela teria vindo se você a tivesse convidado',
-        'Ela veio porque você a convidou',
-        'Ela virá se você a convidar'
+        'Fogo e Sangue',
+        'O Inverno está Chegando (Winter is Coming)',
+        'Nós Não Semeamos',
+        'Família, Dever, Honra'
       ],
       answer: 1,
-      feedbackCorrect: 'Congratulations, you are magic!!!',
-      feedbackIncorrect: 'Ops! Try again...'
+      feedbackCorrect: 'Winter is Coming! Acertou em cheio! 🐺❄️',
+      feedbackIncorrect: 'Errou! O lema da Casa Stark é "O Inverno está Chegando".'
     },
     {
-      question: 'Qual a tradução de "They must have forgotten about the meeting"?',
+      question: 'No clássico "Jurassic Park" (1993), de onde os cientistas extraíram o DNA dos dinossauros?',
       options: [
-        'Eles devem esquecer a reunião',
-        'Eles esqueceram a reunião',
-        'Eles devem ter esquecido a reunião',
-        'Eles vão esquecer a reunião'
-      ],
-      answer: 2,
-      feedbackCorrect: 'Congratulations, you are magic!!!',
-      feedbackIncorrect: 'Ops! Try again...'
-    },
-    {
-      question: 'Qual a tradução de "I wish I could travel more often"?',
-      options: [
-        'Eu queria poder viajar mais frequentemente',
-        'Eu viajo mais frequentemente',
-        'Eu vou viajar mais frequentemente',
-        'Eu posso viajar mais frequentemente'
-      ],
-      answer: 0,
-      feedbackCorrect: 'Congratulations, you are magic!!!',
-      feedbackIncorrect: 'Ops! Try again...'
-    },
-    {
-      question: 'Qual a tradução de "By the time we arrived, the movie had already started"?',
-      options: [
-        'Quando chegamos, o filme já tinha começado',
-        'Quando chegamos, o filme começou',
-        'Quando chegamos, o filme estava começando',
-        'Quando chegamos, o filme vai começar'
-      ],
-      answer: 0,
-      feedbackCorrect: 'Congratulations, you are magic!!!',
-      feedbackIncorrect: 'Ops! Try again...'
-    },
-    {
-      question: 'Qual a tradução de "He is used to waking up early"?',
-      options: [
-        'Ele costumava acordar cedo',
-        'Ele está acostumado a acordar cedo',
-        'Ele acordou cedo',
-        'Ele vai acordar cedo'
+        'Ossos fossilizados',
+        'Mosquitos preservados em pedras de âmbar',
+        'Solo congelado da Antártida',
+        'Ovos petrificados no deserto'
       ],
       answer: 1,
-      feedbackCorrect: 'Congratulations, you are magic!!!',
-      feedbackIncorrect: 'Ops! Try again...'
+      feedbackCorrect: 'Fantástico! Mosquitos fossilizados em âmbar com sangue de dinossauro! 🦟🦕',
+      feedbackIncorrect: 'Não foi dessa vez! O DNA foi retirado de mosquitos pré-históricos em âmbar.'
     },
     {
-      question: 'Qual a tradução de "If I were you, I would apologize"?',
-      options: [
-        'Se eu fosse você, eu pediria desculpas',
-        'Se eu sou você, eu peço desculpas',
-        'Se eu fosse você, eu pedi desculpas',
-        'Se eu sou você, eu pediria desculpas'
-      ],
-      answer: 0,
-      feedbackCorrect: 'Congratulations, you are magic!!!',
-      feedbackIncorrect: 'Ops! Try again...'
-    },
-    {
-      question: 'Qual a tradução de "She has been working here since 2015"?',
-      options: [
-        'Ela trabalha aqui desde 2015',
-        'Ela trabalhou aqui em 2015',
-        'Ela está trabalhando aqui desde 2015',
-        'Ela vai trabalhar aqui desde 2015'
-      ],
+      question: 'Qual ator interpretou o lendário Coringa em "Batman: O Cavaleiro das Trevas" (2008)?',
+      options: ['Jack Nicholson', 'Joaquin Phoenix', 'Heath Ledger', 'Jared Leto'],
       answer: 2,
-      feedbackCorrect: 'Congratulations, you are magic!!!',
-      feedbackIncorrect: 'Ops! Try again...'
+      feedbackCorrect: 'Why so serious? Heath Ledger entregou uma atuação inesquecível! 🃏🎭',
+      feedbackIncorrect: 'Incorreto! A atuação marcante de 2008 foi de Heath Ledger.'
     },
     {
-      question: 'Qual a tradução de "You should have told me the truth"?',
-      options: [
-        'Você deveria me contar a verdade',
-        'Você me contou a verdade',
-        'Você deveria ter me contado a verdade',
-        'Você vai me contar a verdade'
-      ],
-      answer: 2,
-      feedbackCorrect: 'Congratulations, you are magic!!!',
-      feedbackIncorrect: 'Ops! Try again...'
-    },
-    {
-      question: 'Qual a tradução de "Despite the rain, we went for a walk"?',
-      options: [
-        'Apesar da chuva, fomos caminhar',
-        'Por causa da chuva, fomos caminhar',
-        'Apesar da chuva, não fomos caminhar',
-        'Por causa da chuva, ficamos em casa'
-      ],
+      question: 'Na aclamada série "The Last of Us", qual espécie de fungo causa a infecção global?',
+      options: ['Cordyceps', 'Penicillium', 'Aspergillus', 'Rhizopus'],
       answer: 0,
-      feedbackCorrect: 'Congratulations, you are magic!!!',
-      feedbackIncorrect: 'Ops! Try again...'
+      feedbackCorrect: 'Exato! O fungo mutante Cordyceps causou o apocalipse! 🍄🧟',
+      feedbackIncorrect: 'Errou! Trata-se do fungo mutante Cordyceps.'
+    },
+    {
+      question: 'No filme de ficção "Interestelar" (2014), qual é o nome do gigantesco buraco negro?',
+      options: ['TARS', 'Gargântua', 'Cygnus X', 'Endurance'],
+      answer: 1,
+      feedbackCorrect: 'Impressionante! Gargântua, um dos buracos negros mais icônicos do cinema! 🌌🚀',
+      feedbackIncorrect: 'Ops! O buraco negro visitado pelos astronautas se chama Gargântua.'
+    },
+    {
+      question: 'Qual série britânica retrata a gangue familiar liderada por Thomas Shelby em Birmingham?',
+      options: ['Peaky Blinders', 'Downton Abbey', 'Sherlock', 'The Crown'],
+      answer: 0,
+      feedbackCorrect: 'By order of the Peaky Blinders! Resposta certa! 🥃🧢',
+      feedbackIncorrect: 'Não foi dessa vez! A série de Thomas Shelby é "Peaky Blinders".'
     }
   ];
 
-  answer(option: number){
-    if (option === this.quiz[this.perguntaAtual].answer){
+  answer(option: number) {
+    if (this.showAnswer) {
+      return;
+    }
+    if (option === this.quiz[this.perguntaAtual].answer) {
       this.score++;
       this.correct = true;
     } else {
@@ -145,8 +122,15 @@ export class IntermPage {
     this.showAnswer = true;
   }
 
-  nextQuestion(){
+  nextQuestion() {
     this.perguntaAtual++;
+    this.showAnswer = false;
+  }
+
+  reiniciar() {
+    this.perguntaAtual = 0;
+    this.score = 0;
+    this.correct = false;
     this.showAnswer = false;
   }
 }

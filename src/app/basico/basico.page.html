@@ -4,7 +4,7 @@
       <ion-back-button text="Voltar" defaultHref="/home"></ion-back-button>
     </ion-buttons>
     <ion-title>
-      Básico
+      Básico - Cinema Pop
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,11 +13,12 @@
   <!-- Perguntas e respostas -->
   <ion-card *ngIf="perguntaAtual < quiz.length">
     <ion-card-header>
+      <ion-card-subtitle>Pergunta {{ perguntaAtual + 1 }} de {{ quiz.length }}</ion-card-subtitle>
       <ion-card-title> {{ quiz[perguntaAtual].question }} </ion-card-title>
     </ion-card-header>
     <ion-list>
       <ion-item *ngFor="let option of quiz[perguntaAtual].options; index as i">
-        <ion-button expand="full" (click)="answer(i)"> {{ option }}</ion-button>
+        <ion-button expand="full" [disabled]="showAnswer" (click)="answer(i)"> {{ option }}</ion-button>
       </ion-item>
     </ion-list>
   </ion-card>
@@ -25,20 +26,27 @@
   <!-- Feedback -->
   <ion-card *ngIf="showAnswer">
     <ion-card-content>
-      {{ correct ? quiz[perguntaAtual].feedbackCorrect :
-      quiz[perguntaAtual].feedbackIncorrect }}
+      {{ correct ? quiz[perguntaAtual].feedbackCorrect : quiz[perguntaAtual].feedbackIncorrect }}
     </ion-card-content>
-    <ion-button expand="full" (click)="nextQuestion()"> Próximo </ion-button>
+    <ion-button expand="full" (click)="nextQuestion()">
+      {{ perguntaAtual + 1 === quiz.length ? 'Ver Resultado' : 'Próxima Pergunta' }}
+    </ion-button>
   </ion-card>
 
-  <!-- Pontuação -->
+  <!-- Pontuação Final -->
   <ion-card *ngIf="perguntaAtual >= quiz.length">
     <ion-card-header>
-      <ion-card-title>Quiz Concluido!</ion-card-title>
+      <ion-card-title>Quiz Concluído!</ion-card-title>
+      <ion-card-subtitle>Confira seu desempenho cinéfilo</ion-card-subtitle>
     </ion-card-header>
     <ion-card-content>
       <p> {{ score }} de {{ quiz.length }} </p>
     </ion-card-content>
+    <div style="padding: 0 16px 16px 16px; display: flex; flex-direction: column; gap: 8px;">
+      <ion-button expand="full" (click)="reiniciar()">Jogar Novamente</ion-button>
+      <ion-button expand="full" fill="outline" href="/home">Voltar ao Início</ion-button>
+    </div>
   </ion-card>
 
+</ion-content>
 </ion-content>

@@ -14,79 +14,79 @@ export class BasicoPage {
 
   quiz = [
     {
-      question: 'Qual a tradução de "I was happy"?',
-      options: ['Eu sou feliz', 'Eu estou feliz', 'Eu fui feliz', 'Eu feliz'],
-      answer: 2,
-      feedbackCorrect: 'Congratulations, you are magic!!!',
-      feedbackIncorrect: 'Ops! Try again...'
+    questão: 'Qual peça de roupa é tradicionalmente usada em formaturas?',
+    opções: ['Toga', 'Kimono', 'Sari', 'Kilt', 'Smoking'],
+    resposta: 0,
+    feedbackCorreto: 'Parabéns, você é incrível!!',
+    feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-      question: 'Qual a tradução de "I see with my eyes"?',
-      options: ['Eu vi com os meus olhos', 'Eu pisquei os meus olhos', 'Vi meus olhos', 'Eu vejo com os meus olhos'],
-      answer: 3,
-      feedbackCorrect: 'Congratulations, you are magic!!!',
-      feedbackIncorrect: 'Ops! Try again...'
+    questão: 'Qual é o nome do tecido mais comum em camisetas básicas?',
+    opções: ['Seda', 'Linho', 'Poliéster', 'Algodão', 'Lã'],
+    resposta: 3,
+    feedbackCorreto: 'Parabéns, você é incrível!!',
+    feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-      question: 'Qual a tradução de "She has one beautiful hair"?',
-      options: ['Eu tenho um lindo cabelo', 'Ela tem um lindo cabelo', 'Ele tem um lindo cabelo', 'O cabelo é lindo'],
-      answer: 1,
-      feedbackCorrect: 'Congratulations, you are magic!!!',
-      feedbackIncorrect: 'Ops! Try again...'
+    questão: 'Qual acessório é usado para segurar as calças?',
+    opções: ['Gravata', 'Cinto', 'Cachecol', 'Chapéu', 'Luva'],
+    resposta: 1,
+    feedbackCorreto: 'Parabéns, você é incrível!!',
+    feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-      question: 'Qual a tradução de "The cat sleeps on the bed"?',
-      options: ['O cachorro dorme na cama', 'O gato dorme na cama', 'O gato come na cama', 'O gato corre na cama'],
-      answer: 1,
-      feedbackCorrect: 'Congratulations, you are magic!!!',
-      feedbackIncorrect: 'Ops! Try again...'
+    questão: 'Qual dessas é uma cor neutra?',
+    opções: ['Vermelho', 'Azul', 'Verde', 'Rosa', 'Preto'],
+    resposta: 4,
+    feedbackCorreto: 'Parabéns, você é incrível!!',
+    feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-      question: 'Qual a tradução de "I am going to travel tomorrow"?',
-      options: ['Eu vou viajar ontem', 'Eu vou viajar amanhã', 'Eu estou viajando agora', 'Eu viajei semana passada'],
-      answer: 1,
-      feedbackCorrect: 'Congratulations, you are magic!!!',
-      feedbackIncorrect: 'Ops! Try again...'
+    questão: 'Qual estilista é conhecido pelo "New Look"?',
+    opções: ['Coco Chanel', 'Yves Saint Laurent', 'Christian Dior', 'Giorgio Armani', 'Versace'],
+    resposta: 2,
+    feedbackCorreto: 'Parabéns, você é incrível!!',
+    feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-      question: 'Qual a tradução de "She drinks water every day"?',
-      options: ['Ela bebe suco todo dia', 'Ela come água todo dia', 'Ela bebe água todo dia', 'Ela bebe água toda semana'],
-      answer: 2,
-      feedbackCorrect: 'Congratulations, you are magic!!!',
-      feedbackIncorrect: 'Ops! Try again...'
+    questão: 'Qual peça é típica do guarda-roupa masculino clássico?',
+    opções: ['Terno', 'Saia', 'Vestido', 'Bolsa', 'Salto alto'],
+    resposta: 0,
+    feedbackCorreto: 'Parabéns, você é incrível!!',
+    feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-      question: 'Qual a tradução de "My brother is tall"?',
-      options: ['Meu irmão é baixo', 'Meu pai é alto', 'Meu irmão é alto', 'Meu irmão é magro'],
-      answer: 2,
-      feedbackCorrect: 'Congratulations, you are magic!!!',
-      feedbackIncorrect: 'Ops! Try again...'
+    questão: 'Qual material é usado para fazer jeans?',
+    opções: ['Seda', 'Linho', 'Poliéster', 'Cetim', 'Brim'],
+    resposta: 4,
+    feedbackCorreto: 'Parabéns, você é incrível!!',
+    feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-      question: 'Qual a tradução de "We go to school by bus"?',
-      options: ['Nós vamos à escola de carro', 'Nós vamos à escola de ônibus', 'Nós vamos ao trabalho de ônibus', 'Eles vão à escola de ônibus'],
-      answer: 1,
-      feedbackCorrect: 'Congratulations, you are magic!!!',
-      feedbackIncorrect: 'Ops! Try again...'
+    questão: 'Qual acessório é usado no pescoço?',
+    opções: ['Anel', 'Brinco', 'Colar', 'Pulseira', 'Tornozeleira'],
+    resposta: 2,
+    feedbackCorreto: 'Parabéns, você é incrível!!',
+    feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-      question: 'Qual a tradução de "He works in a big city"?',
-      options: ['Ele mora em uma cidade grande', 'Ele trabalha em uma cidade pequena', 'Ele trabalha em uma cidade grande', 'Ele estuda em uma cidade grande'],
-      answer: 2,
-      feedbackCorrect: 'Congratulations, you are magic!!!',
-      feedbackIncorrect: 'Ops! Try again...'
+    questão: 'Qual é o nome da semana de moda de Paris?',
+    opções: ['Milano Moda', 'Paris Fashion Week', 'London Fashion Week', 'New York Fashion Week', 'São Paulo Fashion Week'],
+    resposta: 1,
+    feedbackCorreto: 'Parabéns, você é incrível!!',
+    feedbackIncorreto: 'Ops! Tente novamente...'
     },
     {
-      question: 'Qual a tradução de "They eat rice and beans"?',
-      options: ['Eles comem arroz e feijão', 'Eles comem pão e queijo', 'Eles bebem arroz e feijão', 'Eles comem arroz e carne'],
-      answer: 0,
-      feedbackCorrect: 'Congratulations, you are magic!!!',
-      feedbackIncorrect: 'Ops! Try again...'
+    questão: 'Qual tecido é conhecido por ser transparente e leve?',
+    opções: ['Jeans', 'Lã', 'Couro', 'Seda', 'Algodão'],
+    resposta: 3,
+    feedbackCorreto: 'Parabéns, você é incrível!!',
+    feedbackIncorreto: 'Ops! Tente novamente...'
     },
   ];
 
   answer(option: number) {
-    if (option === this.quiz[this.perguntaAtual].answer) {
+    if (option === this.quiz[this.perguntaAtual].resposta) {
       this.score++;
       this.correct = true;
     } else {
